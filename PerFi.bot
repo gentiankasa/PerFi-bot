@@ -1,0 +1,18 @@
+{
+    "name": "PerFi",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "ed3c22b0-d597-11e9-ab47-4ba545483f16",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\GentianKasa\\Documents\\PerFi-bot\\PerFi.bot"
+}
