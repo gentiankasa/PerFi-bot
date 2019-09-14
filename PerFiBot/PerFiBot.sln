@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerFiBot.Bot", "PerFiBot.Bot\PerFiBot.Bot.csproj", "{A1B5526E-0C35-4DFC-B1BA-EF67B606F37E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerFi.VirtualAssistant", "PerFi.VirtualAssistant\PerFi.VirtualAssistant\PerFi.VirtualAssistant.csproj", "{A5105BE8-DCA2-4F8F-813E-C845FB9432E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerFi.VirtualAssistant.Tests", "PerFi.VirtualAssistant\PerFi.VirtualAssistant.Tests\PerFi.VirtualAssistant.Tests.csproj", "{5CE983C4-C52F-47B2-91F6-95D169620D00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A1B5526E-0C35-4DFC-B1BA-EF67B606F37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B5526E-0C35-4DFC-B1BA-EF67B606F37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B5526E-0C35-4DFC-B1BA-EF67B606F37E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5105BE8-DCA2-4F8F-813E-C845FB9432E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5105BE8-DCA2-4F8F-813E-C845FB9432E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5105BE8-DCA2-4F8F-813E-C845FB9432E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5105BE8-DCA2-4F8F-813E-C845FB9432E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE983C4-C52F-47B2-91F6-95D169620D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE983C4-C52F-47B2-91F6-95D169620D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE983C4-C52F-47B2-91F6-95D169620D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE983C4-C52F-47B2-91F6-95D169620D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

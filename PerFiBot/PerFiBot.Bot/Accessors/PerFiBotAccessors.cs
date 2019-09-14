@@ -4,12 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using PerFiBot.Bot.Bots;
+using PerFiBot.Bot.Models;
 
 namespace PerFiBot.Bot.Accessors
 {
     /// <summary>
     /// This class is created as a Singleton and passed into the IBot-derived constructor.
-    ///  - See <see cref="PerFi"/> constructor for how that is injected.
+    ///  - See <see cref="PerFiVirtualAssistant"/> constructor for how that is injected.
     ///  - See the Startup.cs file for more details on creating the Singleton that gets
     ///    injected into the constructor.
     /// </summary>
@@ -26,6 +27,16 @@ namespace PerFiBot.Bot.Accessors
         /// </summary>
         /// <value>The <see cref="UserState"/> object.</value>
         public UserState UserState { get; }
+
+        public string ReservationStateName { get; } = $"{nameof(PerFiBotAccessors)}.ReservationState";
+        public string TransactionManagementStateName { get; } = $"{nameof(PerFiBotAccessors)}.TransactionManagement";
+        public string BudgetManagementStateName { get; } = $"{nameof(PerFiBotAccessors)}.BudgetManagementState";
+        public string CategoryManagementStateName { get; } = $"{nameof(PerFiBotAccessors)}.CategoryManagementState";
+
+        public IStatePropertyAccessor<ReservationData> ReservationState { get; set; }
+        public IStatePropertyAccessor<TransactionData> TransactionManagemenState { get; set; }
+        public IStatePropertyAccessor<BudgetData> BudgetManagementState { get; set; }
+        public IStatePropertyAccessor<CategoryData> CategoryManagementState { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PerFiBotAccessors"/> class.
